@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .container>div:nth-child(even){
+            background-color: aqua;
+        }
+        .container>div:nth-child(odd){
+            background-color: blanchedalmond;
+        }
+        .container{
+            display: flex;
+            height: 300px;
+            /* justify-content: space-around;
+            align-items: center; */
+        }
+        #item5{
+            flex-grow: 1;
+        }
+        #item3{
+            flex-grow: 1;
+        }
+        #item4{
+            flex-grow: 2;
+        }
+    </style>
+</head>
+<body>
+    <!-- .container>#item$*5{$} -->
+    <div class="container">
+        <div id="item1">1</div>
+        <div id="item2">2</div>
+        <div id="item3">3</div>
+        <div id="item4">4</div>
+        <div id="item5">5</div>
+    </div>
+    
+</body>
+</html>

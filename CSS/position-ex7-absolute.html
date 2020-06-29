@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        #main {
+            position: relative;
+        }
+        #sub {
+            display: none;
+            position: absolute;
+            top: 100%;
+        }
+        #main:hover > #sub {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <!-- ul>li>lorem1+ul>li*5>lorem1 -->
+    <ul>
+        <li id="main">Lorem.
+        <ul id="sub">
+            <li>Lorem.</li>
+            <li>Sit?</li>
+            <li>Tempore.</li>
+            <li>Iste!</li>
+            <li>Cumque.</li>
+        </ul>
+    </li>
+    </ul>
+    <h1>Lorem, ipsum dolor.</h1>
+</body>
+</html>

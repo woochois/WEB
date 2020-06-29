@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* General Sibling Selector */
+        /* 인접하지 않아도 되는 셀렉터 */
+        #child2 ~ div {
+            border: 5px solid red;
+        }
+        #child3~div{
+            border: 6px solid blue;
+        }
+    </style>
+</head>
+<body>
+    <div id="parent1">
+        <div id="parent2">
+            <div id="child1"></div>
+            <div id="child2"></div>
+            <div id="child3"></div>
+            <div id="child4"></div>
+            <div id="child5"></div>
+        </div>
+    </div>
+    
+    <!-- 형제 엘레멘트 만들기 (Emmet 문법) -->
+    <!-- (h1>lorem3)+p>lorem -->
+    <h1>Lorem, ipsum dolor.</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, quo animi molestiae dolore atque aliquid aspernatur iure omnis quisquam nesciunt voluptatibus harum veniam quia corporis quod impedit sed rerum dolorem.</p>
+
+    <!-- 한 칸 올라가기 -->
+    <!-- h1>lorem3^p>lorem -->
+    <h1>Lorem, ipsum dolor.</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil repellat minus, similique facilis aut, accusantium dolorem dolorum dicta numquam tempora, vel consequatur quas dignissimos vitae nam culpa fugit sit. Id!</p>
+</body>
+</html>

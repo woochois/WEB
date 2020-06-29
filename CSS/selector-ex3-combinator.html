@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* adjacent sibling selector */
+        /* 이 엘레멘트 바로 다음에 오는 엘레멘트 */
+        #child2 + div {
+            border: 5px solid green;
+        }
+        #child3 + div {
+            border: 5px solid blue;
+        }
+    </style>
+</head>
+<body>
+    <!-- #parent1>#parent2>#child$*5 -->
+    <div id="parent1">
+        <div id="parent2">
+            <div id="child1"></div>
+            <div id="child2"></div>
+            <div id="child3"></div>
+            <div id="child4"></div>
+            <div id="child5"></div>
+        </div>
+    </div>
+    <h1></h1>
+    <p></p>
+</body>
+</html>
