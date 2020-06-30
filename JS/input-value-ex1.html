@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <style>
+    </style>
+</head>
+<body>
+    <!-- onkeyup : 키보드에서 손을 뗄 때마다 -->
+    <input type="text" id="input1" value="My Name" onkeyup="showText();">
+    <input type="text" id="input2">
+    <script>
+        var inp = document.getElementById("input1");
+        console.log(inp.value);
+        
+        function showText(){
+            // console.log(document.getElementById("input1").value);
+            // var v = document.getElementById("input1").value;
+            document.getElementById("input2").value = document.getElementById("input1").value;
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <style>
+    </style>
+</head>
+<body>
+    <h1 class="note">Lorem, ipsum.</h1>
+    <p class="note">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto fugit autem vitae tempora dolorum esse facere error voluptatem vero! Tempore, provident atque? Consequatur pariatur, nulla reprehenderit excepturi debitis porro dolore.</p>
+    <p class="note">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto fugit autem vitae tempora dolorum esse facere error voluptatem vero! Tempore, provident atque? Consequatur pariatur, nulla reprehenderit excepturi debitis porro dolore.</p>
+    <p class="special">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis aperiam esse non deserunt distinctio sequi eveniet quam suscipit maiores. Porro vero consectetur deserunt nisi quibusdam illum dolorum aliquid dolore minima!</p>
+    
+    <script>
+        
+        // 모든 값 출력
+        var elems = document.querySelectorAll("p.note");
+        console.log(elems.length);
+        for(var i = 0; i < elems.length; i++) console.log(elems[i]);
+
+        // 첫 번째 매치되는 값만 출력
+        var elem = document.querySelector("p.note");
+        console.log(elem.length);
+        for(var i = 0; i < elem.length; i++) console.log(elem[i]);
+    </script>
+</body>
+</html>
