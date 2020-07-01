@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+    <style>
+    </style>
+    <script>
+        $(document).ready(function(){
+            // object literal {property + value, ...}
+            var ins = {
+                        name: "john", 
+                        age: 50,
+                        desc: function(){
+                            // console.log("desc function");
+                            console.log(this.name);
+                        }
+            }; 
+            console.log(ins.name);
+            console.log(ins.age);
+            ins.desc();
+        });
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

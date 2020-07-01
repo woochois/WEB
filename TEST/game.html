@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+    <title>자바스크립트 게임</title>
+    <style>
+        canvas {
+            border: 1px dotted red;
+            background-color: #fcff00;
+        }
+    </style>
+    <script>
+        var context, velocity, angle, ballV, ballVx, ballVy, timer;
+        var ballX = 10;
+        var ballY = 250;
+        var ballRadius = 10;
+        var score = 0;
+        var image = new Image();
+        image.src = "lawn.png";
+        var backimage = new Image();
+        backimage.src = "net.png";
+
+        function drawBall() {
+            context.beginPath();
+            context.arc(ballX, ballY, ballRadius, 0, 2.0 * Math.PI, true);
+            context.fillStyle = "red";
+            context.fill();
+        };
+
+        
+    </script>
+</head>

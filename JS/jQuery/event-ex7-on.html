@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+    <style>
+    </style>
+    <script>
+        $(document).ready(function(){
+            $("button").on("click", function () {
+                console.log("clicked");
+            });
+            $("button").on({
+                mouseenter: function(){
+                    console.log("마우스 들어옴");
+                },
+                mouseleave: function(){
+                    console.log("마우스 나감");
+                },
+                mouseup: function(){
+                    console.log("마우스가 클릭했다가 떨어지면 출력");
+                    
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <button>click</button>
+</body>
+</html>

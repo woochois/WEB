@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+    <style>
+        tr:nth-child(odd){
+            background-color: bisque;
+        }
+    </style>
+    <!-- 
+    css에서 odd 는 1번부터 시작
+    jquery odd 는 0번부터 시작 
+    -->
+    <script>
+        $(document).ready(function(){
+            // $("tr:odd").css("background-color", "red");
+            $("tr").odd().css("background-color", "red");
+        });
+    </script>
+</head>
+<body>
+    <table id="table1">
+        <tr>
+            <td>Lorem.</td>
+            <td>Laborum.</td>
+            <td>A!</td>
+            <td>Sint?</td>
+        </tr>
+        <tr>
+            <td>Nostrum.</td>
+            <td>Ea.</td>
+            <td>Quasi.</td>
+            <td>Dolor?</td>
+        </tr>
+        <tr>
+            <td>Praesentium.</td>
+            <td>Fuga.</td>
+            <td>At!</td>
+            <td>Aperiam.</td>
+        </tr>
+        <tr>
+            <td>Magnam.</td>
+            <td>Ratione!</td>
+            <td>Excepturi.</td>
+            <td>Error!</td>
+        </tr>
+        <tr>
+            <td>Tempora.</td>
+            <td>Quod!</td>
+            <td>Velit.</td>
+            <td>Quaerat.</td>
+        </tr>
+        <tr>
+            <td>Molestias?</td>
+            <td>Itaque.</td>
+            <td>Reiciendis?</td>
+            <td>Quidem?</td>
+        </tr>
+        <tr>
+            <td>Soluta.</td>
+            <td>Illo!</td>
+            <td>Cumque.</td>
+            <td>Beatae.</td>
+        </tr>
+        <tr>
+            <td>Distinctio?</td>
+            <td>Iure!</td>
+            <td>Error.</td>
+            <td>Similique!</td>
+        </tr>
+        <tr>
+            <td>Suscipit?</td>
+            <td>Dolorum!</td>
+            <td>Eveniet!</td>
+            <td>Suscipit?</td>
+        </tr>
+        <tr>
+            <td>Reiciendis.</td>
+            <td>Illum?</td>
+            <td>Est!</td>
+            <td>Aspernatur!</td>
+        </tr>
+    </table>
+</body>
+</html>

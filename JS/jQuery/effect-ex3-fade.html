@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+    <style>
+    </style>
+    <script>
+        $(function(){
+            $("#img1").click(function(){
+                $(this).fadeOut();
+            });
+            $("#btn1").click(function() {
+                $("#img1").fadeIn();
+            });
+            $("#btn2").click(function() {
+                $("#img1").fadeToggle();
+            });
+        });
+    </script>
+</head>
+<body>
+    <button id="btn1">CLICK</button>
+    <button id="btn2">TOGGLE</button>
+    <br>
+    <img src="../일락.jpg" alt="" id="img1">
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+    <style>
+    </style>
+    <script>
+        $(function(){
+            // 파라미터로 숫자값을 받을 수 있다. (파라미터 = 매개 변수)
+            // 문자열값도 받을 수 있다.
+            $("#btn1").click(function() {
+                // $("p").hide(2000);
+                $("p").hide("slow");
+            });
+            $("#btn2").click(function() {
+                // $("p").show(2000);
+                $("p").show("fast");
+            });
+            $("#btn3").click(function() {
+                $("p").toggle(2000); 
+            });
+        });
+    </script>
+</head>
+<body>
+    <button id="btn1">hide</button>
+    <button id="btn2">show</button>
+    <button id="btn3">toggle</button>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores aliquid impedit esse dolore quibusdam reiciendis incidunt sequi a consequuntur laborum inventore sunt assumenda molestias eum corrupti, nisi, in facere voluptatum!</p>
+
+</body>
+</html>
