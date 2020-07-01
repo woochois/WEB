@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <style>
+    </style>
+</head>
+<body>
+    <input type="text" id="input1">
+    <p id="para1"></p>
+    <script>
+        document.getElementById("input1").addEventListener("keyup", show); // on은 생략
+        function show() {
+            var v = document.getElementById("input1").value;
+            document.getElementById("para1").innerHTML = v;
+        }
+    </script>
+</body>
+</html>

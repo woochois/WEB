@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <style>
+    </style>
+</head>
+<body>
+    <input type="text" id="input1">
+    <p id="para1"></p>
+    
+    <script>
+        // var eventName = "keyup"; 이걸 써도되고 리터럴 함수(keyup...) 를 써도 되고
+        document.getElementById("input1").addEventListener("keyup", function(){
+            var v = document.getElementById("input1").value;
+            document.getElementById("para1").innerHTML = v;
+        })
+    </script>
+</body>
+</html>
