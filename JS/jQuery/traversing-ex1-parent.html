@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+    <style>
+    </style>
+    <script>
+        $(function(){
+            $("#li1").parent().css("border", "5px solid blue");
+            $("#li1").parents().css("margin-top", "20px");
+
+            $("#li1").parentsUntil("html").css("padding-top", "20px");
+        });
+    </script>
+</head>
+<body>
+    <div>
+        <ul>
+            <li id="li1">Lorem.</li>
+        </ul>
+    </div>
+</body>
+</html>

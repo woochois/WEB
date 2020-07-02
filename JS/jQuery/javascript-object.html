@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+    <style>
+    </style>
+    <script>
+        $(function(){
+            var o1 = {
+                firstName: "John",
+                "first-name": "Jane",
+                2: "Doe"
+            };
+            console.log(o1.firstName);
+            console.log(o1["firstName"]);
+
+            // 그냥 쓸 수 없는 프로퍼티명일 경우에 [] 사용
+            console.log(o1["first-name"]) 
+            console.log(o1["2"]);
+        });
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

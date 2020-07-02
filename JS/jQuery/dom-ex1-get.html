@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+    <style>
+    </style>
+    <script>
+        $(function(){
+            var t1 = $("#div1").text(); // 텍스트만
+            var t2 = $("#div2").html(); // 태그 정보 모두 다
+            var val = $("#input1").val();
+
+            var attr1 = $("#input1").attr("id");
+            var attr2 = $("#input1").attr("type");
+            var attr3 = $("#input1").attr("value");
+            
+            console.log(attr1);
+            console.log(attr2);
+            console.log(attr3);
+
+            console.log(t1);
+            console.log(t2);
+            console.log(val);
+        });
+    </script>
+</head>
+<body>
+    <div id="div1">
+        <h1>Lorem, ipsum dolor.</h1>
+    </div>
+    <div id="div2">
+        <h1>Similique, ipsum incidunt.</h1>
+    </div>
+    <input type="text" id="input1" value="hello">
+</body>
+</html>

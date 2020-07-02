@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+    <style>
+    </style>
+    <script>
+        $(function(){
+            // $("h1.note").css("color", "aqua"); 아래와 같은 결과
+            $("h1").filter(".note").css("color", "aqua");
+            // $("h1").not(".note").css("background-color", "yellow"); 아래와 같은 결과
+            $("h1:not(.note)").css("background-color", "yellow");
+        });
+    </script>
+</head>
+<body>
+    <h1 class="note">Lorem, ipsum dolor.</h1>
+    <h1 class="note">Aspernatur, cupiditate illo!</h1>
+    <h1 class="note">Maxime, debitis! Voluptatem.</h1>
+    <h1 class="error">Lorem, ipsum dolor.</h1>
+    <h1 class="error">Corporis, distinctio unde.</h1>
+    <h1 class="error">Atque, quis cumque.</h1>
+</body>
+</html>

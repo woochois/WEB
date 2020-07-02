@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+    <style>
+    </style>
+    <script>
+        $(function(){
+            $("#li1").next().css("border", "5px solid green"); // 나 다음 형제
+            $("#li1").nextAll().css("font-size", "50px"); // 나 다음 모든 형제
+            $("#li1").nextUntil(".last").css("background-color", "red"); // 나와 그 다음 형제까지
+            $("#li1").siblings().css("color", "blue"); // 나 빼고 모든 형제
+        });
+    </script>
+</head>
+<body>
+    <ul>
+        <li>Lorem.</li>
+        <li>Facilis!</li>
+        <li>Quidem.</li>
+        <li>Corrupti!</li>
+        <li id="li1">Quo.</li>
+        <li>Quasi.</li>
+        <li>Nostrum!</li>
+        <li>Expedita.</li>
+        <li class="last">Hic?</li>
+        <li>Dolor?</li>
+    </ul>
+</body>
+</html>

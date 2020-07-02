@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+    <style>
+    </style>
+    <script>
+        $(function(){
+            $("#input1").keyup(function(){
+                var val = $(this).val();
+                $("#result").text(val);
+            });
+        });
+    </script>
+</head>
+<body>
+    <input type="text" id="input1">
+    <h1 id="result"></h1>
+</body>
+</html>

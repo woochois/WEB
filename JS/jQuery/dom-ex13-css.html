@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+    <style>
+        h1{
+            background-color: azure;
+            font-size: 50px;
+            position: relative;
+            left: 50px;
+            top: 100px;
+        }
+    </style>
+    <script>
+        $(function(){
+            var bg = $("h1").css("background-color");
+            console.log(bg);
+            console.log($("h1").css("position"));
+            console.log($("h1").css("left"));
+            console.log($("h1").css("top"));
+            console.log($("h1").css("font-size"));
+        });
+    </script>
+</head>
+<body>
+    <h1>Lorem, ipsum dolor.</h1>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+    <style>
+    </style>
+    <script>
+        $(function(){
+            $("#select1").change(function(){
+                var src = $(this).val();
+                $("img").attr("src", src);
+            });
+        });
+    </script>
+</head>
+<body>
+    <select name="" id="select1">
+        <option value="../일락.jpg">일락</option>
+        <option value="../일락2.jpeg">일락2</option>
+    </select>
+    <br>
+    <img src="" alt="">
+</body>
+</html>

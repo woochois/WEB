@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+    <style>
+    </style>
+    <script>
+        $(function(){
+            $("#btn1").click(function(){
+                var li = $("<li />");
+                li.text($("#input1").val());
+               
+                var btn = $("<button />");
+                btn.html("<i class='fas fa-minus'></i>");
+
+                li.append(btn);
+
+                btn.click(function(){
+                    $(this).parent().remove();
+                });
+
+                $("#result").append(li);
+            });
+        });
+    </script>
+</head>
+<body>
+    <input type="text" id="input1">
+    <button id="btn1">
+        <i class="fas fa-plus"></i>
+    </button>
+    <ul id="result"></ul>
+</body>
+</html>
